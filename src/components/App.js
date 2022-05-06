@@ -32,6 +32,7 @@ export function App() {
     <div className="App">
         <input type="text" value={message} />
         <div className='button'>Caps <input type="checkbox" checked={caps} onClick={()=> setCaps((prevState => !prevState))}/></div>
+        <div className='button' onClick={()=> setMessage(prevState => prevState.substring(0, prevState.length - 1))}>Backspace</div>
         <div className='button'>shift <input type="checkbox" checked={shift} onClick={()=> setShift((prevState => !prevState))}/></div>
         <div className='container'>{letters.map(letter => <Button  onClick={() => lettersHandler(letter)} up={letter} down={letter.toLowerCase()}/>)}</div>
     </div>
