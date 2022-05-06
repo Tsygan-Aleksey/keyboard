@@ -1,0 +1,21 @@
+.button{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.button_up{
+    align-self: start;
+}.button_down{
+    align-self: end;
+}
+
+.container{
+    display: flex;
+}
